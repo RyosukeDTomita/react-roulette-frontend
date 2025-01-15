@@ -30,5 +30,5 @@ jobs:
           aws-region: us-east-1
           role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/${{ secrets.AWS_DEPLOY_ROLE }}
           role-session-name: myGitHubActions
-          run: |
-            aws sts get-caller-identity
+      - run: |
+          aws sts get-caller-identity
